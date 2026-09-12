@@ -1,0 +1,2 @@
+rootProject.name = "RootHide"
+include ':app'
