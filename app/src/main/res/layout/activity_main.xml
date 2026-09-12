@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A0A0A"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R4X Root Hide"
+        android:textColor="#00BCD4"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="by rxnexus8-prog"
+        android:textColor="#546E7A"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checking root..."
+        android:textColor="#FFB300"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="APPLY ROOT HIDE"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#00BCD4"
+        android:enabled="false"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Progress -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="#00BCD4"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Log Output -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111111"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:text="Ready...\n"/>
+
+    </ScrollView>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto-starts on boot | Watches app launches"
+        android:textColor="#37474F"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
